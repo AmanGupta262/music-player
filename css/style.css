@@ -1,5 +1,5 @@
 /*=============================================
-=            Global Section            =
+=            Global Styles            =
 =============================================*/
 
 @font-face {
@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 :root {
   --white: #ffffff;
@@ -76,7 +76,7 @@ img {
 }
 @media (min-width: 576px) {
   .container {
-    width: 540px;
+    width: 54rem;
   }
 }
 @media (min-width: 768px) {
@@ -91,17 +91,11 @@ img {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 114rem;
   }
 }
 .main-section {
   flex: 3;
-}
-.left {
-  justify-self: start;
-}
-.right {
-  justify-self: end;
 }
 .center {
   align-self: center;
@@ -129,6 +123,7 @@ aside {
 .material-icons-round:hover,
 .material-icons-round:focus {
   color: white;
+  cursor: pointer;
 }
 .dropdown {
   background-color: rgba(255, 255, 255, 0.9);
@@ -146,8 +141,7 @@ aside {
   text-align: left;
 }
 
-/*=====  End of Global Section  ======*/
-
+/*=====  End of Global Styles  ======*/
 
 /*=============================================
 =            Navbar            =
@@ -264,7 +258,6 @@ aside {
 
 /*=====  End of Navbar  ======*/
 
-
 /*=============================================
 =            Carousel            =
 =============================================*/
@@ -292,7 +285,6 @@ aside {
 }
 
 /*=====  End of Carousel  ======*/
-
 
 /*=============================================
 =            Latest Release Section            =
@@ -365,7 +357,6 @@ aside {
 
 /*=====  End of Latest Release Section  ======*/
 
-
 /*=============================================
 =            Popular Artists Section            =
 =============================================*/
@@ -383,7 +374,6 @@ aside {
   text-align: center;
   text-transform: capitalize;
 }
-
 
 /*=============================================
 =            Catefories Section            =
@@ -405,20 +395,20 @@ aside {
 }
 .stations .image-container {
   margin: 0;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 .category {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   overflow: hidden;
   border-radius: 50%;
 }
 .category .image-container {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   margin-right: 0;
 }
 .category img {
@@ -461,7 +451,6 @@ aside {
 
 /*=====  End of Catefories Section  ======*/
 
-
 /*=============================================
 =            Most Popular Categories Section            =
 =============================================*/
@@ -469,15 +458,15 @@ aside {
 #most-popular .section-container {
   justify-content: space-between;
 }
-.most-popular-element {
+.mood-element {
   position: relative;
 }
-.most-popular-element .image-container,
-.most-popular-element {
+.mood-element .image-container,
+.mood-element {
   min-width: 24rem;
   height: 16rem;
 }
-.most-popular-element .name {
+.mood-element .name {
   position: absolute;
   text-align: center;
   width: 24rem;
@@ -490,7 +479,6 @@ aside {
 }
 
 /*=====  End of Most Popular Categories Section  ======*/
-
 
 /*=============================================
 =            Latest Songs Section            =
@@ -511,7 +499,6 @@ aside {
 }
 
 /*=====  End of Latest Songs Section  ======*/
-
 
 /*=============================================
 =            Queue Section            =
@@ -554,7 +541,7 @@ aside .navbar-fixed .left {
   margin-bottom: 1rem;
 }
 .song .left > div {
-  margin-right: 0.6rem;
+  margin-right: 1rem;
   font-weight: 600;
 }
 #sidebar-main {
@@ -592,6 +579,42 @@ aside .navbar-fixed .left {
 
 /*=====  End of Queue Section  ======*/
 
+/*=============================================
+=            Hero section            =
+=============================================*/
+
+.hero {
+  background-color: #202240;
+  box-shadow: #090e27 0px 4px 12px;
+  justify-content: space-between;
+  height: 30rem;
+}
+.hero .image-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.hero .image-container::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(32,34,64,1) 85%);
+}
+.hero > .left {
+  height: 100%;
+  width: 40%;
+}
+.hero > .right {
+  height: 100%;
+  width: 55%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/*=====  End of Hero section  ======*/
 
 /*=============================================
 =            Play Pause hover effect            =
@@ -604,7 +627,7 @@ aside .navbar-fixed .left {
   width: 100%;
   height: 100%;
   content: "play_arrow";
-  font-family: "Material Icons";
+  font-family: "Material Icons Round";
   font-size: 3rem;
   position: absolute;
   top: 0;
@@ -627,7 +650,7 @@ aside .navbar-fixed .left {
 }
 .favourite::after {
   content: "favorite_border";
-  font-family: "Material Icons";
+  font-family: "Material Icons Round";
   font-size: 1.2rem;
 }
 .toggle-button:hover {
@@ -646,14 +669,14 @@ aside .navbar-fixed .left {
   display: block;
 }
 .category .name:hover + a .play-pause::after,
-.most-popular-element .name:hover + a .play-pause::after {
+.mood-element .name:hover + a .play-pause::after {
   display: block;
 }
 
 .popular-artist .play-pause::after {
   line-height: 11.5rem;
 }
-.most-popular-element .play-pause::after {
+.mood-element .play-pause::after {
   line-height: 16rem;
 }
 .latest-songs .play-pause::after {
@@ -665,7 +688,6 @@ aside .navbar-fixed .left {
 }
 
 /*=====  End of Play Pause hover effect  ======*/
-
 
 /*=============================================
 =            Bottom Music Player            =
@@ -744,7 +766,6 @@ aside .navbar-fixed .left {
   width: 28rem;
 }
 
-
 /*----------  Audio and Volume seek bar  ----------*/
 
 .progress input[type="range"] {
@@ -805,5 +826,3 @@ input[type="range"]::-ms-fill-upper {
 }
 
 /*=====  End of Bottom Music Player  ======*/
-
-

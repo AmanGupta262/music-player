@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <<link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="navbar">
+            <div class="left d-flex">
+                <div class="logo d-flex">
+                    <div class="logo-img">
+                        <img src="img/logo1.svg" alt="">
+                    </div>
+                    <span class="logo-name">
+                        <span>Bob</span><br>
+                        <span>Studio</span>
+                    </span>
+                </div>
+                <span class="link">
+                    <a href="#player">Favourites</a>
+                </span>
+            </div>
+            <div class="right d-flex">
+                <div class="search">
+                    <span class="material-icons-round">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search">
+                    <span class="material-icons-round">
+                        mic
+                    </span>
+                </div>
+                <div class="notif">
+
+                    <i class="material-icons-round">
+                        notifications
+                    </i>
+                    <i class="material-icons-round">
+                        stop_circle
+                    </i>
+                </div>
+                <div class="profile-pic">
+                    <img src="img/profile.jpeg" alt="">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <div class="container d-flex">
+
+        <!--  Main Section -->
+        <main class="main-section col">
+            <!-- Hero Section -->
+            <div class="hero d-flex">
+                <div class="left">
+                    <div class="image-container">
+                        <img src="img/Maroon5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right d-flex">
+                    <div class="heading d-flex">
+                        <div class="left">
+                            <p class="artist-name">Maroon 5 </p>
+                            <p></p>
+                        </div>
+                        <div class="right">
+                            <span class="followers"></span> Followers
+                        </div>
+                    </div>
+                    <div class="description">
+
+                    </div>
+                    <div class="controls">
+                        <button>Play All</button>
+                        <button>Follow</button>
+                    </div>
+                    <div class="songs d-flex">
+                        <div class="tracks">
+                            <span></span> Tracks
+                        </div>
+                        <div class="albums">
+                            <span></span> Albums
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Hero Section -->
+
+            <!-- All Songs -->
+            <div class="all-songs">
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">01</div>
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Ed Sheeran</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End All Songs -->
+
+        </main>
+        <!-- End Main Section -->
+
+        <!-- Sidebar -->
+        <aside class="col">
+            <div class="navbar-fixed d-flex">
+                <div class="left">Queue</div>
+                <div class="right">
+
+                    view all
+
+                </div>
+            </div>
+
+            <div id="sidebar-main">
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">01</div>
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Ed Sheeran</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">02</div>
+
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Else</div>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">03</div>
+
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Else</div>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-fixed d-flex">
+                <div class="left">Queue</div>
+                <div class="right">
+            
+                    view all
+            
+                </div>
+            </div>
+            
+            <div id="sidebar-main">
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">01</div>
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Ed Sheeran</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">02</div>
+            
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Else</div>
+                        </div>
+            
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+                <div class="song d-flex">
+                    <div class="left d-flex">
+                        <div class="count">03</div>
+            
+                        <a href="#player">
+                            <div class="image-container play-pause">
+                                <img src="img/EdSheeran.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="name d-flex">
+                            <div class="song-name"> Thinking out loud</div>
+                            <div class="singer-name">Else</div>
+                        </div>
+            
+                    </div>
+                    <div class="right">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+        <!-- End Sidebar -->
+
+    </div>
+    <!-- Footer -->
+    <footer id="player">
+        <div class="container d-flex">
+            <div class="song-info left d-flex">
+                <div class="image-container"><img src="img/weeknd.jpg" alt=""></div>
+                <div class="song-details">
+                    <p>Blinding Lights</p>
+                    <p>The Weeknd</p>
+                </div>
+                <div class="make-favourite d-flex">
+                    <input type="checkbox" class="toggle-button">
+                    <div class="favourite">
+                    </div>
+                    <span class="material-icons-round">block</span>
+                </div>
+            </div>
+            <div class="main-controls d-flex center">
+                <div class="top-controls d-flex">
+                    <span class="material-icons-round">shuffle</span>
+                    <span class="material-icons-round">skip_previous</span>
+                    <span class="material-icons-round">pause</span>
+                    <span class="material-icons-round">skip_next</span>
+                    <span class="material-icons-round">repeat</span>
+                </div>
+                <div class="bottom-controls d-flex">
+                    <div class="duration">1:24</div>
+                    <div class="progress d-flex"><input type="range"></div>
+                    <div class="duration">4:23</div>
+                </div>
+            </div>
+            <div class="right-control right d-flex">
+                <span class="material-icons-round">playlist_play</span>
+                <span class="material-icons-round">speaker</span>
+                <span class="material-icons-round">volume_up</span>
+                <div class="progress d-flex">
+                    <input type="range">
+                </div>
+                <span class="material-icons-round">open_in_full</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>
