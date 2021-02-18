@@ -1,3 +1,7 @@
+/*=============================================
+=            Global Section            =
+=============================================*/
+
 @font-face {
   font-family: priori-sans;
   src: url(../Priori_Sans_Regular.ttf);
@@ -20,7 +24,7 @@ html {
 }
 a,
 a:hover,
-a:focus{
+a:focus {
   text-decoration: none;
 }
 ::-webkit-scrollbar {
@@ -123,7 +127,7 @@ aside {
   margin-right: 5px;
 }
 .material-icons-round:hover,
-.material-icons-round:focus{
+.material-icons-round:focus {
   color: white;
 }
 .dropdown {
@@ -142,7 +146,13 @@ aside {
   text-align: left;
 }
 
-/* Navbar */
+/*=====  End of Global Section  ======*/
+
+
+/*=============================================
+=            Navbar            =
+=============================================*/
+
 .navbar-fixed {
   position: fixed;
   width: 100%;
@@ -251,9 +261,14 @@ aside {
   object-fit: cover;
   border-radius: 50%;
 }
-/* End Navbar */
 
-/* Carousel section */
+/*=====  End of Navbar  ======*/
+
+
+/*=============================================
+=            Carousel            =
+=============================================*/
+
 .carousel .row {
   justify-content: space-between;
 }
@@ -275,9 +290,14 @@ aside {
   opacity: 1;
   z-index: 1;
 }
-/* End Carousel section */
 
-/* Latest Release Section */
+/*=====  End of Carousel  ======*/
+
+
+/*=============================================
+=            Latest Release Section            =
+=============================================*/
+
 .section-container {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -342,9 +362,14 @@ aside {
 .text {
   line-height: 24px;
 }
-/* End Latest Release Section */
 
-/* Popular Artists */
+/*=====  End of Latest Release Section  ======*/
+
+
+/*=============================================
+=            Popular Artists Section            =
+=============================================*/
+
 .popular-artist .image-container {
   border-radius: 50%;
   overflow: hidden;
@@ -358,9 +383,12 @@ aside {
   text-align: center;
   text-transform: capitalize;
 }
-/* End Popular Artists */
 
-/* Category */
+
+/*=============================================
+=            Catefories Section            =
+=============================================*/
+
 #categories .section-container {
   background-color: #101642;
   padding: 1rem;
@@ -431,9 +459,13 @@ aside {
   );
 }
 
-/* End Category */
+/*=====  End of Catefories Section  ======*/
 
-/* Most Popular Section */
+
+/*=============================================
+=            Most Popular Categories Section            =
+=============================================*/
+
 #most-popular .section-container {
   justify-content: space-between;
 }
@@ -456,9 +488,14 @@ aside {
   text-shadow: 2px 1px 1px black;
   z-index: 2;
 }
-/* End Most Popular Section */
 
-/* Latest Songs Section */
+/*=====  End of Most Popular Categories Section  ======*/
+
+
+/*=============================================
+=            Latest Songs Section            =
+=============================================*/
+
 .latest-songs .image-container {
   width: 12rem;
   height: 12rem;
@@ -472,11 +509,16 @@ aside {
 .latest-songs .name p:last-child {
   font-weight: 300;
 }
-/* End Latest Songs Section */
 
-/* Queue Section */
+/*=====  End of Latest Songs Section  ======*/
+
+
+/*=============================================
+=            Queue Section            =
+=============================================*/
+
 aside.col {
-  height: 80vh;
+  height: 83vh;
   width: 25%;
   top: 9.3rem;
   position: sticky;
@@ -522,7 +564,7 @@ aside .navbar-fixed .left {
 #sidebar-main .count {
   font-size: 0.8rem;
 }
-#sidebar-main .image-container{
+#sidebar-main .image-container {
   width: 5rem;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
@@ -548,7 +590,13 @@ aside .navbar-fixed .left {
   margin-right: -5px;
 }
 
-/* End Queue Section */
+/*=====  End of Queue Section  ======*/
+
+
+/*=============================================
+=            Play Pause hover effect            =
+=============================================*/
+
 .play-pause {
   position: relative;
 }
@@ -605,19 +653,24 @@ aside .navbar-fixed .left {
 .popular-artist .play-pause::after {
   line-height: 11.5rem;
 }
-.most-popular-element .play-pause::after{
+.most-popular-element .play-pause::after {
   line-height: 16rem;
 }
-.latest-songs .play-pause::after{
+.latest-songs .play-pause::after {
   line-height: 12rem;
 }
-.song .play-pause::after{
+.song .play-pause::after {
   line-height: 5.2rem;
   font-size: 2rem;
 }
 
+/*=====  End of Play Pause hover effect  ======*/
 
-/* Footer */
+
+/*=============================================
+=            Bottom Music Player            =
+=============================================*/
+
 #player {
   position: fixed;
   bottom: 0;
@@ -677,9 +730,9 @@ aside .navbar-fixed .left {
 .top-controls {
   margin-bottom: 0.5rem;
 }
-.top-controls span:nth-child(3){
+.top-controls span:nth-child(3) {
   border: 2px solid white;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 .bottom-controls {
@@ -691,7 +744,9 @@ aside .navbar-fixed .left {
   width: 28rem;
 }
 
-/* Progress bar for audio and voluume */
+
+/*----------  Audio and Volume seek bar  ----------*/
+
 .progress input[type="range"] {
   overflow: hidden;
   -webkit-appearance: none;
@@ -733,7 +788,7 @@ aside .navbar-fixed .left {
 ::-moz-range-progress {
   background-color: #acce66;
 }
-::-moz-range-track{
+::-moz-range-track {
   background-color: white;
 }
 ::-ms-track {
@@ -743,11 +798,12 @@ aside .navbar-fixed .left {
   border: none;
 }
 input[type="range"]::-ms-fill-lower {
-  background-color: #acce66; 
+  background-color: #acce66;
 }
-input[type="range"]::-ms-fill-upper {  
+input[type="range"]::-ms-fill-upper {
   background-color: white;
 }
-/* End Progress bar for audio and voluume */
 
-/* End Footer */
+/*=====  End of Bottom Music Player  ======*/
+
+
