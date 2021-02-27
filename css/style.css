@@ -253,7 +253,7 @@ aside {
   color: white;
   font-size: 1.5rem;
 }
-.link{
+.link {
   display: none;
 }
 .link a {
@@ -687,7 +687,7 @@ aside {
 .bottom-controls .progress input {
   width: 17rem;
 }
-.right-control{
+.right-control {
   display: none;
 }
 .right-control .progress {
@@ -946,7 +946,8 @@ aside .queue-menu .dropdown {
 }
 .controls button {
   padding: 0.8rem;
-  width: 10rem;
+  width: 7rem;
+  font-size: 1rem;
   border-radius: 0%;
   margin-right: 0.5rem;
   border: 0px;
@@ -1202,15 +1203,19 @@ aside .queue-menu .dropdown {
   .search input {
     width: 16rem;
   }
+  .controls button {
+    width: 10rem;
+    font-size: 1.2rem;
+  }
   .player {
     justify-content: space-between;
     padding-inline: 1rem;
   }
   .make-favourite,
-  .right-control{
+  .right-control {
     display: flex;
   }
-  .link{
+  .link {
     display: block;
   }
 }
