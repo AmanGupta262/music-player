@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob Studio</title>
     <link rel="shortcut icon" href="img/logo1.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -22,8 +24,8 @@
                         <a href="index.html"><img src="img/logo1.svg" alt=""></a>
                     </div>
                     <span class="logo-name">
-                        <span>Bob</span><br>
-                        <span>Studio</span>
+                        <span class="focus-in-contract-bck">Bob</span><br>
+                        <span class="focus-in-contract-bck">Studio</span>
                     </span>
                 </div>
                 <span class="link">
@@ -57,10 +59,11 @@
     </div>
     <!-- End Navbar -->
 
-    <div class="container d-flex">
+    <div class="container main-container d-flex">
 
         <!--  Main Section -->
         <main class="main-section col">
+            <!-- Carousel Section -->
             <header>
                 <div class="carousel ">
                     <div class="row d-flex">
@@ -77,6 +80,8 @@
 
                 </div>
             </header>
+            <!-- End Carousel Section -->
+
             <!-- Latest Release -->
             <section id="latest-release">
                 <h1 class="section-title">
@@ -421,70 +426,67 @@
                             Stations
                         </div>
                     </div>
-                    <div class="category">
-                        <div class="name d-flex love">
-                            Love
-                        </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/love.jpg" alt="">
+                    <div class="category-container d-flex">
+                        <div class="category">
+                            <div class="name d-flex love">
+                                Love
                             </div>
-                        </a>
-
-                    </div>
-                    <div class="category">
-                        <div class="name d-flex retro">
-                            Retro
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/love.jpg" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/retro.jpeg" alt="">
+                        <div class="category">
+                            <div class="name d-flex retro">
+                                Retro
                             </div>
-                        </a>
-                    </div>
-                    <div class="category">
-                        <div class="name d-flex chill">
-                            Chill
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/retro.jpeg" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/chill.jpg" alt="">
+                        <div class="category">
+                            <div class="name d-flex chill">
+                                Chill
                             </div>
-                        </a>
-
-                    </div>
-                    <div class="category">
-                        <div class="name d-flex workout">
-                            Workout
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/chill.jpg" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/workout.jpg" alt="">
+                        <div class="category">
+                            <div class="name d-flex workout">
+                                Workout
                             </div>
-                        </a>
-
-                    </div>
-                    <div class="category ">
-                        <div class="name d-flex rock">
-                            Rock
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/workout.jpg" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/rock.jpeg" alt="">
+                        <div class="category ">
+                            <div class="name d-flex rock">
+                                Rock
                             </div>
-                        </a>
-
-                    </div>
-                    <div class="category">
-                        <div class="name d-flex pop">
-                            Pop
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/rock.jpeg" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <a href="playlist.html">
-                            <div class="image-container play-pause">
-                                <img src="img/pop.jpg" alt="">
+                        <div class="category">
+                            <div class="name d-flex pop">
+                                Pop
                             </div>
-                        </a>
-
+                            <a href="playlist.html">
+                                <div class="image-container play-pause">
+                                    <img src="img/pop.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -678,9 +680,8 @@
                 </div>
             </section>
             <!-- End Latest Hindi -->
-
         </main>
-        <!-- End Main Section -->
+        <!--  End Main Section -->
 
         <!-- Sidebar -->
         <aside class="col">
@@ -975,12 +976,12 @@
 
                         <a href="#player">
                             <div class="image-container play-pause">
-                                <img src="img/EdSheeran.jpg" alt="">
+                                <img src="img/love-me.jpg" alt="">
                             </div>
                         </a>
                         <div class="name d-flex">
-                            <div class="song-name"> Perfect</div>
-                            <div class="singer-name">Ed Sheeran</div>
+                            <div class="song-name"> Love Me Like You Do</div>
+                            <div class="singer-name">Ellie Goulding</div>
                         </div>
 
                     </div>
@@ -994,51 +995,369 @@
 
         </aside>
         <!-- End Sidebar -->
-
     </div>
+
     <!-- Footer -->
     <footer id="player">
+        <a class="material-icons-round close" href="">
+            close
+        </a>
         <div class="container d-flex">
-            <div class="song-info left d-flex">
-                <div class="image-container"><img src="img/weeknd.jpg" alt=""></div>
-                <div class="song-details">
-                    <marquee behavior=scroll direction="left" scrollamount="3">Blinding Lights</marquee>
-                    <p>The Weeknd</p>
-                </div>
-                <div class="make-favourite d-flex">
-                    <input type="checkbox" class="toggle-button">
-                    <div class="favourite">
+            <!-- Mobile Queue  -->
+            <div class="queue">
+                <div class="navbar-fixed d-flex">
+                    <div class="left">Queue</div>
+                    <div class="right">
+                        <div class="dropdown-container queue-menu" tabindex="1">
+                            Queue
+                            <span class="material-icons-round">
+                                keyboard_arrow_down
+                            </span>
+                            <div class="dropdown">
+                                <ul class="list">
+                                    <li>
+                                        <a href="#player">
+                                            <span class="material-icons-round ">
+                                                queue_music
+                                            </span>
+                                            <span> Playlists</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#player">
+                                            <span class="material-icons-round ">
+                                                favorite
+                                            </span>
+                                            <span> Favourites Songs</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <span class="material-icons-round">block</span>
+                </div>
+                <div class="sidebar-main">
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">01</div>
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/i-dont-care.jpg" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">I Don't Care</div>
+                                <div class="singer-name">Ed Sheeran</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">02</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/dusk-till-down.jpeg" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Dusk Till Down</div>
+                                <div class="singer-name">Zayn Malik</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">03</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/vaatthi.jpg" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Vaathi Coming</div>
+                                <div class="singer-name">Anirudh Ravichander</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="current-playing">
+                                <span class="material-icons-round">
+                                    bar_chart
+                                </span>
+                            </div>
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/in-your-eyes.jpeg" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">In Your Eyes</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">01</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause" tabindex="1">
+                                    <img src="img/shawnmendes.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name"> Treat You Better</div>
+                                <div class="singer-name">Shawn Mendes</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">02</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/heartless.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Heartless</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">03</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/blinding-ligghts.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Blinding Lights</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">01</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/starboy.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Starboy</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">02</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/the-hills.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">The Hills</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">03</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/i-feel-it-coming.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">I feel it coming</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">01</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/secrets.webp" alt="" />
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name">Secrets</div>
+                                <div class="singer-name">The Weeknd</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">02</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/EdSheeran.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name"> Thinking out loud</div>
+                                <div class="singer-name">Ed Sheeran</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song d-flex">
+                        <div class="left d-flex">
+                            <div class="count">03</div>
+
+                            <a href="#player">
+                                <div class="image-container play-pause">
+                                    <img src="img/love-me.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="name d-flex">
+                                <div class="song-name"> Love Me Like You Do</div>
+                                <div class="singer-name">Ellie Goulding</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" class="toggle-button">
+                            <div class="favourite">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-controls d-flex center">
-                <div class="top-controls d-flex">
-                    <span class="material-icons-round">shuffle</span>
-                    <span class="material-icons-round">skip_previous</span>
-                    <span class="material-icons-round">pause</span>
-                    <span class="material-icons-round">skip_next</span>
-                    <span class="material-icons-round">repeat</span>
+            <!--End Mobile Queue  -->
+            
+            <!-- Bottom Player -->
+            <div class="player d-flex">
+                <div class="song-info left d-flex">
+                    <div class="image-container"><img src="img/weeknd.jpg" alt=""></div>
+                    <div class="song-details">
+                        <marquee behavior=scroll direction="left" scrollamount="3">Blinding Lights</marquee>
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="make-favourite d-flex">
+                        <input type="checkbox" class="toggle-button">
+                        <div class="favourite">
+                        </div>
+                        <span class="material-icons-round">block</span>
+                    </div>
                 </div>
-                <div class="bottom-controls d-flex">
-                    <div class="duration">1:24</div>
-                    <div class="progress d-flex"><input type="range"></div>
-                    <div class="duration">4:23</div>
+                <div class="main-controls d-flex center">
+                    <div class="top-controls d-flex">
+                        <span class="material-icons-round">shuffle</span>
+                        <span class="material-icons-round">skip_previous</span>
+                        <span class="material-icons-round">pause</span>
+                        <span class="material-icons-round">skip_next</span>
+                        <span class="material-icons-round">repeat</span>
+                    </div>
+                    <div class="bottom-controls d-flex">
+                        <div class="duration">1:24</div>
+                        <div class="progress d-flex"><input type="range"></div>
+                        <div class="duration">4:23</div>
+                    </div>
+                </div>
+                <div class="right-control right d-flex">
+                    <span class="material-icons-round">playlist_play</span>
+                    <span class="material-icons-round">speaker</span>
+                    <span class="material-icons-round">volume_up</span>
+                    <div class="progress d-flex">
+                        <input type="range">
+                    </div>
+                    <span class="material-icons-round">open_in_full</span>
                 </div>
             </div>
-            <div class="right-control right d-flex">
-                <span class="material-icons-round">playlist_play</span>
-                <span class="material-icons-round">speaker</span>
-                <span class="material-icons-round">volume_up</span>
-                <div class="progress d-flex">
-                    <input type="range">
-                </div>
-                <span class="material-icons-round">open_in_full</span>
-            </div>
+            <!--End Bottom Player -->
         </div>
     </footer>
     <!-- End Footer -->
-
 </body>
 
 </html>
