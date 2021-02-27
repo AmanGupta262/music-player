@@ -253,6 +253,9 @@ aside {
   color: white;
   font-size: 1.5rem;
 }
+.link{
+  display: none;
+}
 .link a {
   padding: 10px;
   font-size: 1.2rem;
@@ -528,7 +531,7 @@ aside {
 =            Mood Section            =
 =============================================*/
 
-#most-popular .section-container {
+#mood .section-container {
   justify-content: space-between;
 }
 .mood-element {
@@ -598,7 +601,7 @@ aside {
   left: 0;
   width: 100%;
   z-index: 20;
-  background-color: #282828;
+  background-color: #232b2b;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -620,6 +623,7 @@ aside {
 }
 .player {
   width: 100%;
+  background-color: #282828;
 }
 .player .image-container {
   width: 4rem;
@@ -654,6 +658,7 @@ aside {
   margin-bottom: -1rem;
 }
 .make-favourite {
+  display: none;
   position: relative;
   align-self: flex-start;
   margin-top: 0.8rem;
@@ -682,11 +687,14 @@ aside {
 .bottom-controls .progress input {
   width: 17rem;
 }
+.right-control{
+  display: none;
+}
 .right-control .progress {
   width: 6rem;
 }
 .queue {
-  height: 71vh;
+  height: 75vh;
   background-color: #232b2b;
   overflow-y: auto;
   position: relative;
@@ -1197,6 +1205,13 @@ aside .queue-menu .dropdown {
   .player {
     justify-content: space-between;
     padding-inline: 1rem;
+  }
+  .make-favourite,
+  .right-control{
+    display: flex;
+  }
+  .link{
+    display: block;
   }
 }
 @media only screen and (min-width: 768px) {
