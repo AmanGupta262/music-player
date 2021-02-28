@@ -939,14 +939,17 @@ aside .queue-menu .dropdown {
   line-height: 1.4;
   letter-spacing: 0.5px;
   font-size: 0.8rem;
+  max-height: 10rem;
+  overflow: auto;
 }
 .controls {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .controls button {
   padding: 0.8rem;
-  width: 7rem;
+  width: 6rem;
   font-size: 1rem;
   border-radius: 0%;
   margin-right: 0.5rem;
@@ -1020,7 +1023,7 @@ aside .queue-menu .dropdown {
 }
 
 #similar-artists + .navbar-fixed {
-  z-index: 100;
+  z-index: -1;
 }
 #similar-artists .dropdown-container {
   z-index: 150;
