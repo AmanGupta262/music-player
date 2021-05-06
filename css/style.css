@@ -6,6 +6,7 @@
   font-family: priori-sans;
   src: url(../Priori_Sans_Regular.ttf);
 }
+/* removing defalt padding and margins */
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   background-image: linear-gradient(45deg, #0a0f28, #0c0f28);
@@ -32,13 +34,10 @@ a:focus {
   color: white;
   text-decoration: none;
 }
+
+/* Hiding scroll bar */
 ::-webkit-scrollbar {
   display: none;
-}
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ffffffb3;
-  opacity: 1; /* Firefox */
 }
 html,
 body,
@@ -46,6 +45,13 @@ aside,
 .queue {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Placeholder color */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffffb3;
+  opacity: 1; /* Firefox */
 }
 
 img {
@@ -58,11 +64,13 @@ img {
   margin-right: 1.5rem;
   padding: 1rem;
 }
+/* flex class */
 .d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* material icons  */
 .material-icons-round,
 .material-icons-outlined {
   font-size: 16px !important;
@@ -99,6 +107,17 @@ aside {
   flex: 1 0;
   display: none;
 }
+.image-container {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.section-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .section-title {
   margin: 2rem 0 1rem;
   color: white;
@@ -108,6 +127,7 @@ aside {
   line-height: 2;
   border-bottom: 1px solid white;
 }
+/* Dropdown */
 .dropdown {
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
@@ -152,6 +172,7 @@ aside {
   z-index: 5;
   display: none;
 }
+/* checkbox toggle button */
 .toggle-button {
   position: absolute;
   z-index: 5;
@@ -199,18 +220,6 @@ aside {
   line-height: 6rem;
   font-size: 2rem;
 }
-.section-container {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.image-container {
-  width: 6rem;
-  height: 6rem;
-  margin-right: 1rem;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
 /*=====  End of Play Pause hover effect  ======*/
 
 /*=============================================
@@ -231,6 +240,7 @@ aside {
   justify-content: space-between;
   align-items: center;
 }
+/* logo */
 .logo-img {
   height: 4.8rem;
   width: 5rem;
@@ -270,6 +280,7 @@ aside {
   background-color: #fff4;
   border-radius: 5px;
 }
+/* search bar */
 .search input {
   padding: 0.5rem 2.5rem;
   width: 18rem;
@@ -314,6 +325,7 @@ aside {
   left: 8px;
   top: 3px;
 }
+/* user profile */
 .profile-pic {
   height: 4rem;
   width: 4rem;
